@@ -1,9 +1,9 @@
 /* ==========================================================================
-   Layout Styles
+   Layout
    ========================================================================== */
 
 @grid_total-columns: 12;
-@grid_wrapper-width: 1200px;
+@grid_wrapper-width: 1000px;
 
 .cols-12 {
 
@@ -22,8 +22,51 @@
 
 }
 
-.col {
-  // Space each column apart vertically.
-  margin-bottom: 10px;
+/* ==========================================================================
+   Header
+   ========================================================================== */
+
+.site-title {
+  .grid_column(4);
 }
 
+
+.main-nav {
+  .grid_column(8);
+  vertical-align: baseline;
+  font-size: 1.125em;
+  .webfont-regular;
+
+  ul,
+  li {
+    margin: 0;
+    padding: 0;
+    text-align: right;
+  }
+
+  li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 40px;
+  }
+}
+
+/* ==========================================================================
+   Content area
+   ========================================================================== */
+
+.demo-content {
+  background-color: @gray-10;
+  padding: 40px 0;
+  margin-top: 0;
+}
+
+.bd-input {
+  width: 100%;
+}
+
+.lead {
+  .webfont-regular;
+  margin-top: 20px;
+  font-size: 1.125em;
+}

@@ -4,14 +4,20 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 <body ng-app="MyApp">
-  <div class="cols-12">
-    <h1>OAH Lite</h1>
-    <ul>
-      <li><a ui-sref="home">Home page</a></li>
-      <li><a ui-sref="second">Second page</a></li>
-    </ul>
-    <div ui-view></div>
-  </div>
+    <header>
+      <div class="cols-12">
+        <h1 class="site-title">Angular Demo</h1>
+        <nav class="main-nav">
+          <ul>
+            <li><a ui-sref="home">Home page</a></li>
+            <li><a ui-sref="second">Second page</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <section class="demo-content">
+      <section class="view cols-12" ui-view></div>
+    </section>
   <script src="js/build.js"></script>
 </body>
 </html>

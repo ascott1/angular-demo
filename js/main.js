@@ -25,4 +25,8 @@ app.config(function($locationProvider, $stateProvider) {
 
 });
 
+app.run(function($rootScope) {
+  $rootScope.name = "Ari Lerner";
+});
+
 app.run();
