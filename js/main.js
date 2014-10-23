@@ -17,10 +17,10 @@ app.config(function($locationProvider, $stateProvider) {
     templateUrl: 'views/home.html',
     controller: require('./controllers/ExampleCtrl').inject(app)
   })
-  .state('second', {
-    url: '/second',
+  .state('controllers', {
+    url: '/controllers',
     controller: require('./controllers/ExampleCtrl').inject(app),
-    templateUrl: 'views/secondary.html'
+    templateUrl: 'views/controllers.html'
   });
 
 });
