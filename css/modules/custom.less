@@ -1,0 +1,29 @@
+/* ==========================================================================
+   Layout Styles
+   ========================================================================== */
+
+@grid_total-columns: 12;
+@grid_wrapper-width: 1200px;
+
+.cols-12 {
+
+  // Make .cols-12 a cf-grids .wrapper.
+  .grid_wrapper();
+
+  // Space .wrappers apart from each other.
+  margin-top: 20px;
+  margin-bottom: 40px;
+
+  // Make section elements inside of .cols-12 a .nested-col-group.
+
+  section {
+    .grid_nested-col-group();
+  }
+
+}
+
+.col {
+  // Space each column apart vertically.
+  margin-bottom: 10px;
+}
+
