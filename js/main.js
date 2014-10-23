@@ -21,6 +21,11 @@ app.config(function($locationProvider, $stateProvider) {
     url: '/controllers',
     controller: require('./controllers/ExampleCtrl').inject(app),
     templateUrl: 'views/controllers.html'
+  })
+  .state('directives', {
+    url: '/directives',
+    controller: require('./controllers/ExampleCtrl').inject(app),
+    templateUrl: 'views/directives.html'
   });
 
 });
