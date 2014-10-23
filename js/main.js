@@ -18,15 +18,11 @@ app.config(function($locationProvider, $stateProvider) {
     controller: require('./controllers/ExampleCtrl').inject(app)
   })
   .state('second', {
-    url: '/aap',
+    url: '/second',
     controller: require('./controllers/ExampleCtrl').inject(app),
     templateUrl: 'views/secondary.html'
   });
 
-});
-
-app.run(function($rootScope) {
-  $rootScope.name = "Ari Lerner";
 });
 
 app.run();
