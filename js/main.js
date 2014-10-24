@@ -26,6 +26,11 @@ app.config(function($locationProvider, $stateProvider) {
     url: '/directives',
     controller: require('./controllers/ExampleCtrl').inject(app),
     templateUrl: 'views/directives.html'
+  })
+  .state('gif', {
+    url: '/gif',
+    controller: require('./controllers/GifCtrl').inject(app),
+    templateUrl: 'views/gif.html'
   });
 
 });
