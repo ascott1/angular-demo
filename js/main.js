@@ -31,6 +31,11 @@ app.config(function($locationProvider, $stateProvider) {
     url: '/gif',
     controller: require('./controllers/GifCtrl').inject(app),
     templateUrl: 'views/gif.html'
+  })
+  .state('calc', {
+    url: '/calc',
+    controller: require('./controllers/CalcCtrl').inject(app),
+    templateUrl: 'views/loan.html'
   });
 
 });

@@ -21,6 +21,7 @@
   },
   "homepage": "https://github.com/ascott1/angular-demo",
   "dependencies": {
+    "amortize": "^0.2.2",
     "angular": "~1.3.0",
     "angular-ui-router": "~0.2.11",
     "cf-npm-demo": "git://github.com/ascott1/cf-npm-demo.git#7f32917912",

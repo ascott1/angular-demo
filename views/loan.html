@@ -1,0 +1,14 @@
+<h2>Amortization Calculator</h2>
+
+<form novalidate class="simple-form">
+  <label>Loan Amount:</label>
+  <input type="text" name="input" ng-model="loan.amount" required ng-trim="false">
+  <label>Interest Rate:</label>
+  <input type="text" name="input" ng-model="loan.rate" required ng-trim="false">
+  <label>Loan term (in months):</label>
+  <input type="text" name="input" ng-model="loan.totalTerm" required ng-trim="false">
+  <button class="btn btn_loan" ng-click="update(loan)">SAVE</button></p>
+</form>
+
+<p>You monthly principal and interest payment will be: <strong>{{master.payment | currency}}</strong></p>
+<p>Your interest cost after <strong>5</strong> years will be: <strong>{{master.interest | currency}}</strong></p>
