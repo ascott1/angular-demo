@@ -1,4 +1,5 @@
 'use strict';
+var flip = require('flip-text');
 
 exports.inject = function(app) {
   app.directive('exampleDirective', exports.directive);
@@ -7,7 +8,12 @@ exports.inject = function(app) {
 
 exports.directive = function() {
   return {
-    restrict: 'E',
-    template: '<p>Hey, I\'m a directive!</p>'
+    restrict: 'EA',
+    template: '<p class="lead">Flip me!</p>',
+    link: function ($scope, elem, attrs) {
+      elem.on('click', function ($event) {
+        elem.replaceWith(flip(elem.text()));
+      });
+    }
   };
 };

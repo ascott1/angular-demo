@@ -3,8 +3,12 @@
 
 <h3>Albums by Yo La Tengo:</h3>
 
+<form>
+  <input ng-model="query" type="text" placeholder="Filter by" autofocus>
+</form>
+
 <ul>
-  <li ng-repeat="album in albums">
+  <li ng-repeat="album in albums  | filter:query">
     {{album.title}}
   </li>
 </ul>
