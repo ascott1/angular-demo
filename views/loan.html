@@ -2,12 +2,11 @@
 
 <form novalidate class="simple-form">
   <label>Loan Amount:</label>
-  <input type="text" name="input" ng-model="loan.amount" required ng-trim="false">
+  <input type="text" name="input" ng-model="loan.amount" required ng-trim="false" ng-keyup="update(loan)">
   <label>Interest Rate:</label>
-  <input type="text" name="input" ng-model="loan.rate" required ng-trim="false">
+  <input type="text" name="input" ng-model="loan.rate" required ng-trim="false" ng-keyup="update(loan)">
   <label>Loan term (in months):</label>
-  <input type="text" name="input" ng-model="loan.totalTerm" required ng-trim="false">
-  <button class="btn btn_loan" ng-click="update(loan)">SAVE</button></p>
+  <input type="text" name="input" ng-model="loan.totalTerm" required ng-trim="false" ng-keyup="update(loan)">
 </form>
 
 <p>You monthly principal and interest payment will be: <strong>{{master.payment | currency}}</strong></p>
